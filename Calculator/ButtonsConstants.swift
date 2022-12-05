@@ -13,6 +13,11 @@ struct K {
         static let invert = "+/-"
         static let ac = "AC"
         static let percentage = "%"
+        
+        static let sum = "+"
+        static let equals = "="
+        static let substrack = "-"
+        static let multiply = "×"
         static let devide = "÷"
     }
     
