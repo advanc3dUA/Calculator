@@ -21,7 +21,13 @@ class ViewController: UIViewController {
             return number
         }
         set {
-            displayLabel.text = String(newValue)
+            var stringNewValue = String(newValue)
+            
+            if stringNewValue.hasSuffix(".0") {
+                stringNewValue = stringNewValue.replacingOccurrences(of: ".0", with: "")
+            }
+            
+            displayLabel.text = stringNewValue
         }
     }
     
